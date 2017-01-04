@@ -15,7 +15,7 @@
 	}
 	
 	
-	h1, h2, h3
+	h1, h2, h3, h4
 	{
 		margin: 0;
 		padding: 0;
@@ -53,7 +53,7 @@
 	
 	.container
 	{
-		width: 1200px;
+		width: 1000px;
 		margin: 0px auto;
 	}
 
@@ -156,7 +156,7 @@
 	.major
 	{
 		overflow: hidden;
-		margin-bottom: 4em;
+		margin-bottom: 2em;
 		text-align: center;
 	}
 	
@@ -169,12 +169,21 @@
 		color: #3f3f3f;
 	}
 
+	.major h3
+	{
+		letter-spacing: 0.10em;
+		text-transform: uppercase;
+		font-size: 2em;
+		font-weight: 300;
+		color: #3f3f3f;
+	}
+
 	.major .byline
 	{
 		display: block;
 		padding-top: 0.2em;
 		font-weight: 300;
-		font-size: 2em;
+		font-size: 1.2em;
 	}
 
 /*********************************************************************************/
@@ -241,7 +250,7 @@
 
 	#logo
 	{
-		padding: 4em 0em;
+		padding: 3em 0em;
 		text-transform: uppercase;
 	}
 
@@ -250,6 +259,13 @@
 		text-align: center;
 		font-weight: 900;
 		font-size: 2.5em;
+	}
+	
+	#logo h4
+	{
+		text-align: center;
+		font-weight: 900;
+		font-size: 1.0em;
 	}
 	
 	#logo h1 a
@@ -279,7 +295,7 @@
 	#menu ul
 	{
 		margin: 0;
-		padding: 20px 0px 20px 0px;
+		padding: 10px 0px 10px 0px;
 		list-style: none;
 		line-height: normal;
 		text-align: center;
@@ -325,7 +341,7 @@
 	#page
 	{
 		overflow: hidden;
-		padding: 6em 0em;
+		padding: 2em 0em;
 		border-top: 1px solid #E5E5E5;
 	}
 
@@ -363,7 +379,7 @@
 	#sidebar
 	{
 		float: right;
-		width: 588px;
+		width: 388px;
 	}
 
 /*********************************************************************************/
@@ -406,7 +422,7 @@
 	#featured-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 2em 0em;
 		background: #FFF;
 	}
 	
@@ -414,6 +430,12 @@
 	{
 		text-align: center;
 	}
+
+	#featured h3
+	{
+		text-align: center;
+	}
+
 
 	#featured .icon
 	{
