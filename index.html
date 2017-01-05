@@ -2,6 +2,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
+
+<script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		 var   currentScrollTop = 0;
+  
+   // it's asynchronous jQuery, window load needed first
+   window.onload = function() {
+         // when page reloaded
+         scrollController();
+   
+         // Run when it's scrolling
+        $(window).on('scroll', function () {
+           scrollController();
+        });
+  }
+  
+  // Function; control menu-position
+  function scrollController() {
+     currentScrollTop = $(window).scrollTop();
+     if (currentScrollTop < 0) {
+        $('#header').css('top', 0-(currentScrollTop));
+        if ($('#header').hasClass('fixed')) {
+            $('#header').removeClass('fixed');
+        }
+     }  else  {
+          if  (!$('#header').hasClass('fixed'))  {
+               $('#header').css('top', 0);
+               $('#header').addClass('fixed');
+          }
+        }
+  }
+	</script>
+
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
@@ -9,7 +42,11 @@
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
+
+
+
 <body>
+
 <div id="header">
 	<div id="menu" class="container">
 		<ul>
@@ -22,10 +59,14 @@
 		</ul>
 	</div>
 </div>
+
+
 <div id="logo" class="container">
 	<h1><a href="#" class="icon icon-star"><span>Cascade</span></a></h1></br>
 	<h4><span align="center">Computational Research Lap for galaxy formation and reionization</span></h4>
 </div>
+
+
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
@@ -41,6 +82,7 @@ We are also interested in the reionization of the Universe, which is likely driv
 	<div id="sidebar"><a href="#" class="image image-full"><img src="images/outflow.jpg" alt="" /></a></div>
 </div>
 
+
 <div id="featured-wrapper">
 	<div id="featured" class="container">
 		<div class="major">
@@ -50,8 +92,11 @@ We are also interested in the reionization of the Universe, which is likely driv
 	</div>
 </div>
 
+
 <div id="copyright" class="container">
 	<p>&copy; All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
+
+
 </body>
 </html>

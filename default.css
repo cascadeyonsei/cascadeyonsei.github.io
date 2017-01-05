@@ -241,7 +241,11 @@
 
 	#header
 	{
-		background: #3f3f3f;
+		position: fixed;
+		left: 0px;	
+		width: 100%;	
+	
+		background: #3f3f3f; 
 	}
 
 /*********************************************************************************/
@@ -252,6 +256,10 @@
 	{
 		padding: 3em 0em;
 		text-transform: uppercase;
+		
+		margin-top: 80px;
+
+		
 	}
 
 	#logo h1
